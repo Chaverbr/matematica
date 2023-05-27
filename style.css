@@ -45,7 +45,6 @@ main {
     width: 1000px;
     margin: auto;
     padding: 40px;
-    font-size: 1.25rem;
     background-color: #252525;
     color: #f7f7f7;
 }
@@ -58,13 +57,13 @@ main {
 }
 
 .titulo {
-    font-size: 19px;
+    font-size: 22px;
     margin-bottom: 8px;
 }
 
 .enunciado {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .gabarito {
@@ -90,7 +89,7 @@ main {
 
 
 
-@media (max-width: 390px) {
+@media (max-width: 450px) {
     .cabecalho {
         width: 100%;
         height: 96px;

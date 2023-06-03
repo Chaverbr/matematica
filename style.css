@@ -12,11 +12,16 @@ body {
 
 .cabecalho {
     height: max-content;
+    width: 100%;
     padding: 16px 48px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
+}
+
+hr {
+    width: 100%;
 }
 
 .cabecalho-titulo {
@@ -36,6 +41,7 @@ body {
     color: #f7f7f7;
     font-size: 20px;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .cabecalho-nav li a:hover {
@@ -58,14 +64,33 @@ main {
     padding: 16px;
 }
 
-.titulo {
+.questoesContainer-titulo {
     font-size: 22px;
     margin-bottom: 8px;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 1.45rem;
+    margin: 64px 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
 }
 
 .enunciado {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+}
+
+.opcoes {
+    list-style: none;
+    font-size: 1.5rem;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+.opcoes li{
+    margin-bottom: 8px;
 }
 
 .gabarito {
@@ -91,7 +116,7 @@ main {
 
 
 
-@media (max-width: 450px) {
+@media (max-width: 744px) {
     .cabecalho {
         width: 100%;
         height: 96px;
@@ -103,12 +128,12 @@ main {
     }
 
     .cabecalho-titulo {
-        font-size: 26;
+        font-size: 26px;
     }
 
     .cabecalho-nav {
         margin: 4px 0px 0px 0px;
-        gap: 8px;
+        gap: 12px;
     }
 
     main {
@@ -126,9 +151,80 @@ main {
         padding: 4px;
     }
 
+    .questoesContainer-titulo {
+        font-size: 1.125rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
     .titulo {
-        font-size: 26px;
-        margin-bottom: 16px;
+        text-align: center;
+        font-size: 1.4rem;
+        margin: 64px 0px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+    }
+
+    .enunciado {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .gabarito {
+        font-size: 18px;
+        max-width: 300px;
+        line-height: 32px;
+        margin-top: 20px;
+        padding: 8px;
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        width: 100%;
+        height: 96px;
+        padding: 0 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho-titulo {
+        font-size: 28px;
+    }
+
+    .cabecalho-nav {
+        margin: 4px 0px 0px 0px;
+        gap: 24px;
+    }
+
+    main {
+        width: 100%;
+        height: max-content;
+        margin: 0;
+        padding: 40px 16px 12px 16px;
+        background-color: #252525;
+        color: #f7f7f7;
+    }
+
+    .questoesContainer {
+        height: max-content;
+        margin-bottom: 56px;
+        padding: 4px;
+    }
+
+    .questoesContainer-titulo {
+       font-size: 1.25rem;
+    }
+
+    .titulo {
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 64px 0px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
     }
 
     .enunciado {

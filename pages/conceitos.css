@@ -1,0 +1,74 @@
+.teoremaDeDescartes-sinais {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      padding: 12px;
+      
+}
+
+.tituloContainer {
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteudoContainer {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.titulo {
+      font-size: 1.5rem;
+}
+
+.subtitulo {
+      font-size: 1.145rem;
+}
+
+.paragrafo {
+      font-size: 1.125rem;
+      margin: 32px 0px;
+}
+
+ol, ul {
+      margin: 32px 24px;
+}
+
+ol > li, ul > li{
+      margin: 12px 0px;
+}
+
+
+
+@media (max-width: 744px) {
+      .teoremaDeDescartes-sinais {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            padding: 4px;
+      }
+
+      .tituloContainer > .subtitulo {
+            font-size: 1.250rem;
+            margin: 32px 0px 16px 0px;
+      }
+
+      .subtitulo {
+            font-size: 1.250rem;
+            margin: 96px 0px 16px 0px;
+      }
+
+      .subtitulo:nth-child(2) {
+            font-size: 1.250rem;
+            margin: 16px 0px 16px 0px;
+      }
+
+      .paragrafo {
+            font-size: 1.25rem;
+            margin: 32px 0px;
+            text-align: justify;
+      }
+
+      ol, ul {
+            margin: 32px 24px;
+            font-size: 1.125rem;
+      }
+}

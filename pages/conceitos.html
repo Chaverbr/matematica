@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemática | Questões</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./conceitos.css">
+
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+            },
+            svg: {
+                fontCache: 'local'
+            }
+        }
+    </script>
+
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1 class="cabecalho-titulo">Matématica</h1>
+
+        <ul class="cabecalho-nav">
+            <li><a href="conceitos.html">Conceitos</a></li>
+            <li><a href="../index.html">Questões</a></li>
+        </ul>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section class="teoremaDeDescartes-sinais">
+            <div class="tituloContainer">
+                  <h3 class="titulo">Teorema de Descartes</h3>
+                  <h4 class="subtitulo">Teorema das regras de sinais e raízes das equações</h4>
+            </div>
+
+            <div class="conteudoContainer">
+                  <p class="paragrafo">Para saber de Antemão quantas raízes reais um polinomio possui, descartes criou uma regra de sinais para saber quantas raízes positivas e negativas são possiveis em um dado polinomio dependendo da troca de sinais:</p>
+
+                  <h4 class="subtitulo">Segundo os seguintes passos:</h4>
+                  <ol>
+                        <li>Ordenar o polinomio de forma crescente.</li>
+                        <li>Verificar a troca de sinais para p(x) - polinomio, Com isso determinando a quantidade de raízes positivas.</li>
+                        <li>Verificar a troca de sinais para p(-x) - polinomio, Com isso determinando a quantidade de raízes negativas.</li>
+                        <li>Subtrair dois e essas são as possibilidades.</li>
+                  </ol>
+
+                  <h4 class="subtitulo">Alguns exemplos:</h4>
+
+                  <p class="paragrafo">Sendo: $P(x) = -4x^4 + 7x^3 + 5x^2 + 3x -2$. Devemos verificar as trocas de sinais dos coeficientes. A regra que iremos usar é: para expoentes pares os sinais se mantém e para expoentes impares trocamos</p>
+                  
+                  <p class="paragrafo">Sendo: P(x) analizaremos um por um:</p>
+                  <ul>
+                        <li>Entre $-4x^4$ e $+7x^3$ temos uma troca de sinal de - para +.</li>
+                        <li>Entre $+7x^3$ e $+5x^2$ não temos trocas pois se mantém de + para +.</li>
+                        <li>Entre $+5x^2$ e $+3x$ não temos trocas pois se mantém de + para +.</li>
+                        <li>Entre $+3x$ e $-2$ temos uma troca de sinal de + para -.</li>
+                  </ul>
+                  <p class="paragrafo">Concluindo Assim que temos 2 trocas de Sinais para P(x).</p>
+
+                  <h4 class="subtitulo">Analisando P(-x) temos:</h4>
+
+                  <p class="paragrafo">$P(x) = -4x^4 - 7x^3 + 5x^2 - 3x -2$.</p>
+                  <p class="paragrafo">Em expoentes pares o sinal se mantém e com expoentes impares o sinal troca.</p>
+                  <ul>
+                        <li>Entre $-4x^4$ e $-7x^3$ não temos trocas pois se mantém de - para -.</li>
+                        <li>Entre $-7x^3$ e $+5x^2$ temos trocas de - para +.</li>
+                        <li>Entre $+5x^2$ e $-3x$ temos trocas de + para -.</li>
+                        <li>Entre $-3x$ e $-2$ não temos trocas pois se mantém de - para -.</li>
+                  </ul>
+            </div>
+        </section>
+
+    </main>
+     
+</body>
+
+</html>
